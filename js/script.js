@@ -32,6 +32,7 @@ const ageField = document.getElementById('age');
 const confirmButton = documet.getElementById('confirm-button');
 
 
+
 //elementi inerenti al biglietto 
 
 
@@ -40,6 +41,7 @@ const passengersElement = documet.getElementById('passenger-name');
 const carElement = documet.getElementById('car');
 const pnrElement = documet.getElementById('pnr');
 const priceElement = documet.getElementById('price');
+const rateElement = document.getElementById('rate')
 
 
 
@@ -67,7 +69,43 @@ confirmButton.addEventListener('click', function (e) {
 
 
 
+    let finalPrice = KmsValue * pricepPerKm;
 
+    //sconto da applicare 
+
+
+    if (ageValue == 'junior') {//html
+
+        price *= 0.8;
+
+        rateName = 'Tariffa minorenni';
+
+    } else if (ageValue == 'senior') {
+        price *= 0.6;
+        rateName = 'Tariffa Senior';
+    }
+
+
+    console.log(price, rateName);
+
+
+    //Inaserisco i dati nel biglietto usa la funzione inner value 
+
+
+    passengersElement.innerText = nameValue;
+
+    rateElement.innerText = rateName;
+    carElement.innerText = carName;
+
+    pnrElement.innerText = pnrName;
+
+    priceElement.innerText = price;
+
+
+    //msotrare il biglietto 
+
+
+    ticketSection.classList.romove('d-none');
 
 })
 

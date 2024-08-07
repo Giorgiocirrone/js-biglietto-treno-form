@@ -46,5 +46,28 @@ const priceElement = documet.getElementById('price');
 //variabili costanti per calcolo prezzo 
 
 
-c
+const pricepPerKm = 0.21;
+
+let rateName = 'Tariffa Ordinaria';
+
+//evento bottone
+confirmButton.addEventListener('click', function (e) {
+
+
+    e.preventDefault();
+
+    const nameValue = nameField.ariaValueMax.trim();
+
+    const KmsValue = parseInt(KmsField.value)
+    const ageValue = ageField.value;
+
+    console.log('nameValue', nameValue);
+    console.log('KmsValue', KmsValue);
+    console.log('ageValue', ageValue);
+
+
+
+
+
+})
 

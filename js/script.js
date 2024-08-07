@@ -26,17 +26,41 @@ svuoto i campi dal form
 // definire le variabili del form e del biglietto 
 
 // elementi interenti al fomr 
-const name = document.getElementById('name');
-const Kms = document.getElementById('Kms');
-const age = document.getElementById('age');
+const nameField = document.getElementById('name');
+const KmsField = document.getElementById('Kms');
+const ageField = document.getElementById('age');
 const confirmButton = documet.getElementById('confirm-button');
 
 
 //elementi inerenti al biglietto 
 
 
+const ticketSection = documet.getElementById('Ticket-section');
+const passengersElement = documet.getElementById('passenger-name');
+const carElement = documet.getElementById('car');
+const pnrElement = documet.getElementById('pnr');
+const priceElement = documet.getElementById('price');
 
 
 
+
+
+
+
+
+
+//calcolo del prezzo di base 
+
+
+let price = KmsValue + pricePerKm;
+
+// ci sono sconti ? 
+
+
+if (ageValue == 'junior') {
+
+    price *= 0.8
+    rateName = 'Tariffa per minorenni';
+}
 
 

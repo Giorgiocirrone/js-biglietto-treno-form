@@ -23,25 +23,114 @@
 
         <section id="form-section" class="m-5">
             <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Inserisic i tuoi dati</h5>
-                    <hr>
-                    <div class="row row-cols-md-3">
-                        <div class="col">
-                            <div class="mb-3">
-                                <label for="name" class="form-label">Name</label>
-                                <input type="text" class="form-control" id="name" placeholder="name@example.com">
+                <form>
+                    <div class="card-body">
+                        <h5 class="card-title">Inserisic i tuoi dati</h5>
+                        <hr>
+
+                        <div class="row row-cols-md-3">
+                            <div class="col">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="name@example.com">
+                                </div>
                             </div>
+                            <div class="col">
+                                <div class="mb-3">
+                                    <label for="Kms" class="form-label">Kms</label>
+                                    <input type="number" class="form-control" id="Kms" placeholder="name@example.com">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="mb-3">
+                                    <label for="age" class="form-label">Età</label>
+                                    <select class="form-select" id="age">
+
+                                        <option value="">adulto</option>
+                                        <option value="Junior">Minorenne</option>
+                                        <option value="senior">over 65</option>
+                                    </select>
+
+                                </div>
+                            </div>
+
+
                         </div>
-                        <div class="col"></div>
-                        <div class="col"></div>
+                    </div>
+            </div>
+
+            <div class="card-footern d-flex justify-content-end gap-3">
+                <button class="btn btn-secondary" type='reset'>Annulla</button>
+                <button class="btn btn-primary" type="submit">Conferma </button>
+            </div>
+            </form>
+
+        </section>
+
+
+
+
+        <!--mettiamo display non perchè vogliamo vederlo soltanto dopo aver compilato il form -->
+        <section id="ticket-section" class="m-5 ">
+
+
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="..." class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Biglietto </h5>
+
+                            <hr>
+
+                            <h4 id="passenger-name">Mister</h4>
+
+                            <div class="row row-cols-md-4">
+                                <div class="col">
+
+                                    <h6>Tariffa</h6>
+                                    <div id="rate">Adulto</div>
+
+                                </div>
+                                <div class="col">
+
+                                    <h6>Carrozza</h6>
+                                    <div id="car">8</div>
+
+                                </div>
+                                <div class="col">
+
+                                    <h6>Matricola</h6>
+                                    <div id="pnt">654166</div>
+
+                                </div>
+
+                                <div class="col">
+
+                                    <h6>Totale</h6>
+                                    <div id="price">20$</div>
+
+                                </div>
+
+
+
+
+
+
+
+
+
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <!--mettiamo display non perchè vogliamo vederlo soltanto dopo aver compilato il form -->
-        <section id="ticket-section" class="m-5 d-none"></section>
+
+        </section>
 
     </main>
 
@@ -52,7 +141,7 @@
 
 
 </html>
-<p></p>
+
 
 
 <!---->

@@ -43,24 +43,8 @@ const priceElement = documet.getElementById('price');
 
 
 
+//variabili costanti per calcolo prezzo 
 
 
-
-
-
-
-//calcolo del prezzo di base 
-
-
-let price = KmsValue + pricePerKm;
-
-// ci sono sconti ? 
-
-
-if (ageValue == 'junior') {
-
-    price *= 0.8
-    rateName = 'Tariffa per minorenni';
-}
-
+c
 
